@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://yuxue-r.github.io/yuxue-r.io/atom.xml" rel="self"/>
+  <link href="https://yuxue-r.github.io/atom.xml" rel="self"/>
   
-  <link href="https://yuxue-r.github.io/yuxue-r.io/"/>
+  <link href="https://yuxue-r.github.io/"/>
   <updated>2025-08-25T14:38:04.379Z</updated>
-  <id>https://yuxue-r.github.io/yuxue-r.io/</id>
+  <id>https://yuxue-r.github.io/</id>
   
   <author>
     <name>yuxue</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://yuxue-r.github.io/yuxue-r.io/article/4a17b156.html"/>
-    <id>https://yuxue-r.github.io/yuxue-r.io/article/4a17b156.html</id>
+    <link href="https://yuxue-r.github.io/article/4a17b156.html"/>
+    <id>https://yuxue-r.github.io/article/4a17b156.html</id>
     <published>2025-08-25T11:50:30.948Z</published>
     <updated>2025-08-25T14:38:04.379Z</updated>
     
