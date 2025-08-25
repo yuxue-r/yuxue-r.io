@@ -3,14 +3,14 @@
   <title>Hexo</title>
   
   
-  <link href="https://yuxue-r.github.io/yuxue-r.io/atom.xml" rel="self"/>
+  <link href="https://yuxue-r/yuxue-r.io/atom.xml" rel="self"/>
   
-  <link href="https://yuxue-r.github.io/yuxue-r.io/"/>
+  <link href="https://yuxue-r/yuxue-r.io/"/>
   <updated>2025-08-25T11:50:30.948Z</updated>
-  <id>https://yuxue-r.github.io/yuxue-r.io/</id>
+  <id>https://yuxue-r/yuxue-r.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>yuxue</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://yuxue-r.github.io/yuxue-r.io/2025/08/25/hello-world/"/>
-    <id>https://yuxue-r.github.io/yuxue-r.io/2025/08/25/hello-world/</id>
+    <link href="https://yuxue-r/yuxue-r.io/2025/08/25/hello-world/"/>
+    <id>https://yuxue-r/yuxue-r.io/2025/08/25/hello-world/</id>
     <published>2025-08-25T11:50:30.948Z</published>
     <updated>2025-08-25T11:50:30.948Z</updated>
     
