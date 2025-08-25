@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yuxue-r.github.io/yuxue-r.io/article/4a17b156.html</loc>
+    <loc>https://yuxue-r.github.io/yuxue-r.io/article/cfe6b72b.html</loc>
+    
+    <lastmod>2025-08-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuxue-r.github.io/yuxue-r.io/article/8f889db4.html</loc>
     
     <lastmod>2025-08-25</lastmod>
     
@@ -18,6 +27,27 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://yuxue-r.github.io/yuxue-r.io/tags/%E5%91%A8%E8%AE%B0/</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuxue-r.github.io/yuxue-r.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuxue-r.github.io/yuxue-r.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   

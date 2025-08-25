@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>yuxue&#39;s blog</title>
   
-  
+  <subtitle>1</subtitle>
   <link href="https://yuxue-r.github.io/yuxue-r.io/atom.xml" rel="self"/>
   
   <link href="https://yuxue-r.github.io/yuxue-r.io/"/>
-  <updated>2025-08-25T14:38:04.379Z</updated>
+  <updated>2025-08-25T15:22:34.888Z</updated>
   <id>https://yuxue-r.github.io/yuxue-r.io/</id>
   
   <author>
@@ -17,23 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://yuxue-r.github.io/yuxue-r.io/article/4a17b156.html"/>
-    <id>https://yuxue-r.github.io/yuxue-r.io/article/4a17b156.html</id>
-    <published>2025-08-25T11:50:30.948Z</published>
-    <updated>2025-08-25T14:38:04.379Z</updated>
+    <title>架构</title>
+    <link href="https://yuxue-r.github.io/yuxue-r.io/article/8f889db4.html"/>
+    <id>https://yuxue-r.github.io/yuxue-r.io/article/8f889db4.html</id>
+    <published>2025-08-25T15:19:43.000Z</published>
+    <updated>2025-08-25T15:22:34.888Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;架构设计的目的&quot;&gt;&lt;a href=&quot;#架构设计的目的&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
+    
+    <category term="笔记" scheme="https://yuxue-r.github.io/yuxue-r.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一周随笔</title>
+    <link href="https://yuxue-r.github.io/yuxue-r.io/article/cfe6b72b.html"/>
+    <id>https://yuxue-r.github.io/yuxue-r.io/article/cfe6b72b.html</id>
+    <published>2025-08-25T15:02:04.000Z</published>
+    <updated>2025-08-25T15:28:03.877Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;20250825</summary>
+        
+      
+    
+    
+    
+    
+    <category term="周记" scheme="https://yuxue-r.github.io/yuxue-r.io/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+    <category term="随笔" scheme="https://yuxue-r.github.io/yuxue-r.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
