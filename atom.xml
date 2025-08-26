@@ -6,7 +6,7 @@
   <link href="https://yuxue-r.github.io/yuxue-r.io/atom.xml" rel="self"/>
   
   <link href="https://yuxue-r.github.io/yuxue-r.io/"/>
-  <updated>2025-08-26T14:26:24.756Z</updated>
+  <updated>2025-08-26T15:24:18.401Z</updated>
   <id>https://yuxue-r.github.io/yuxue-r.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>用阻塞队列实现一个生产者消费者模型？synchronized和lock有什么区别？</title>
+    <link href="https://yuxue-r.github.io/yuxue-r.io/article/e74365cc.html"/>
+    <id>https://yuxue-r.github.io/yuxue-r.io/article/e74365cc.html</id>
+    <published>2025-08-26T15:20:45.000Z</published>
+    <updated>2025-08-26T15:24:18.401Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;多线程当中的阻塞队列&quot;&gt;&lt;a href=&quot;#多线程当中的阻塞队列&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="高并发" scheme="https://yuxue-r.github.io/yuxue-r.io/categories/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
+    
+    
+    <category term="并发, 线程池, 面试" scheme="https://yuxue-r.github.io/yuxue-r.io/tags/%E5%B9%B6%E5%8F%91-%E7%BA%BF%E7%A8%8B%E6%B1%A0-%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高并发面试：线程池的七大参数？手写一个线程池？</title>
     <link href="https://yuxue-r.github.io/yuxue-r.io/article/be9ddd6c.html"/>
     <id>https://yuxue-r.github.io/yuxue-r.io/article/be9ddd6c.html</id>
     <published>2025-08-26T14:25:49.000Z</published>
-    <updated>2025-08-26T14:26:24.756Z</updated>
+    <updated>2025-08-26T15:24:24.891Z</updated>
     
     
       
