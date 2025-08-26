@@ -401,7 +401,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
 <li>SynchronousQueue是一个不存储元素的阻塞队列，单个插入操作必须等到另一个线程调用移除操作，否则插 入操作一直处于阻塞状态</li>
 </ul>
 <h2 id="1-阻塞队列概念"><a href="#1-阻塞队列概念" class="headerlink" title="1. 阻塞队列概念"></a>1. 阻塞队列概念</h2><p>阻塞队列通俗来说，是一个队列，而一个阻塞队列再数据结构中所起的作用大致如下图</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbvusqpclj30qn0c0q3o.jpg" alt="image-20210710152515909"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/image-20250827001032075.png" alt="image-20250827001032075"></p>
 <p>线程1往阻塞队列中添加元素，而线程2从阻塞队列中移除元素</p>
 <p>当阻塞队列是空时，从队列中==获取==元素的操作会被阻塞<br>当阻塞队列是满时，从队列中==添加==元素的操作会被阻塞</p>
 <ul>
@@ -420,7 +420,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
 <li><p>阻塞队列图示：</p>
 </li>
 </ol>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsby1wqaq0j31670cq0vp.jpg" alt="image-20210710164119883"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/12.jpg" alt="12"></p>
 <h2 id="3-BlockingQueue的核心方法"><a href="#3-BlockingQueue的核心方法" class="headerlink" title="3. BlockingQueue的核心方法"></a>3. BlockingQueue的核心方法</h2><table>
 <thead>
 <tr>
@@ -455,7 +455,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
 </tbody></table>
 <p>可以看到，对于不同的方法类型，内部对应插入移除以及检查方法对应的api都不同，所以，想要对不同的对列操作时候，需要考虑是否需要抛出异常？线程是否需要阻塞等，这样对应不同的方法才能达到事半功倍的效果</p>
 <p>参照源码</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbwtnn23ij30j106vjxb.jpg" alt="image-20210710155849140"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/13.jpg" alt="13"></p>
 <p>对上述方法类型做描述：</p>
 <table>
 <thead>
@@ -482,7 +482,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
 </tr>
 </tbody></table>
 <h2 id="4-种类分析"><a href="#4-种类分析" class="headerlink" title="4. 种类分析"></a>4. 种类分析</h2><h3 id="4-1-接口查看"><a href="#4-1-接口查看" class="headerlink" title="4.1 接口查看"></a>4.1 接口查看</h3><p>我们知道，阻塞队列是BlockingQueue，我们打开Diagram图查看类之间的关系可得</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbwvp35c8j30an0b1gps.jpg" alt="image-20210710160046739"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/13.jpg" alt="14"></p>
 <p>Queue是继承了Queue的接口，同时Queue接口又继承了Collection接口，那么BlockingQueue作为接口，那么一定会有实现类，不同实现类使用不同数据结构实现，完成的操作也不相同，我们这里列出BlockingQueue的7个实现类，分别为：</p>
 <ul>
 <li>==ArrayBlockingQueue==:由数组结构组成的有界阻塞队列</li>
@@ -494,7 +494,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
 <li>LinkedBlocking<strong>Deque</strong>:由双向链表结构组成的双向阻塞队列。</li>
 </ul>
 <p>我们常用的实现类，在上面已经用重点符号表示了，ArrayBlockingQueue类似我们常用的ArrayList，底层数据结构是数组组成的队列，LinkedBlockingQueue就类似我们常用的LinkedList，底层数据结构是链表组成的队列，这里要注意LinkedBlocking<strong>Deque</strong>，那么Deque的接口继承关系如下所示：</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbwv6evjpj30ew0c90z2.jpg" alt="image-20210710160016061"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/15.jpg" alt="15"></p>
 <p>对于我们常用的实现类，我们可以发现SychronousQueue我们不常用也不了解，什么是单个元素的队列？那么我们下面用代码实现一下：</p>
 <h3 id="4-2-SychronousQueue"><a href="#4-2-SychronousQueue" class="headerlink" title="4.2 SychronousQueue"></a>4.2 SychronousQueue</h3><p>概念：SynchronousQueue没有容量，与其他BlockingQueue不同，SychronousQueue是一个不存储元素的BlockingQueue，每一个put操作必须要等待一个take操作，否则不能继续添加元素，反之亦然</p>
 <p>代码实例：</p>
@@ -1134,7 +1134,7 @@ LinkedBlockingQueue是一个基于链表结构的阻塞队列，此队列按FIFO
                 <a href="/yuxue-r.io/article/be9ddd6c.html">
                     <div class="card-image">
                         
-                        <img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6bhmgmqj30kn0fbtj7.jpg" class="responsive-img" alt="高并发面试：线程池的七大参数？手写一个线程池？">
+                        <img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/1.jpg" class="responsive-img" alt="高并发面试：线程池的七大参数？手写一个线程池？">
                         
                         <span class="card-title">高并发面试：线程池的七大参数？手写一个线程池？</span>
                     </div>

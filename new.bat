@@ -72,7 +72,7 @@ pause >nul
 goto menu
  
 :deploy
-call hexo clean && call hexo g && call hexo d && call hexo cl
+call hexo clean && call hexo g && call hexo d
 echo 部署完成，请按任意键返回菜单。
 pause >nul
 goto menu

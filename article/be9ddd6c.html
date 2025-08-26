@@ -296,7 +296,7 @@ import java.util.concurrent.">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://tva1.sinaimg.cn/large/008i3skNly1gsd6bhmgmqj30kn0fbtj7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -450,7 +450,7 @@ import java.util.concurrent.">
 <h2 id="3-线程池如何使用？"><a href="#3-线程池如何使用？" class="headerlink" title="3. 线程池如何使用？"></a>3. 线程池如何使用？</h2><ol>
 <li><p>架构说明</p>
 <p>Java中的线程池是通过Executor框架实现的，该框架中用到了 ：<code>Executor,Executors,ExecutorService,ThreadPoolExecutor</code></p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6bhmgmqj30kn0fbtj7.jpg" alt="image-20210711181248546"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/1.jpg" alt="1"></p>
 </li>
 <li><p>编码实现</p>
 <p>实现有五种，<code>Executors.newScheduledThreadPool()</code>是带时间调度的，java8新推出</p>
@@ -461,21 +461,21 @@ import java.util.concurrent.">
 <p><strong>执行长期的任务，性能好很多</strong></p>
 <p>创建一个定长线程池，可控制线程最大并发数，超出的线程回在队列中等待newFixedThreadPool创建的线程池corePoolSize和maximumPoolSize值是相等的，它使用的是 LinkedBlockingQueue</p>
 <p>底层源码：</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6csyzipj30k408zdmu.jpg" alt="image-20210711181410391"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/2.jpg" alt="2"></p>
 </li>
 <li><p><code>Executors.newSingleThreadExecutor()</code></p>
 <p><strong>一个任务一个任务执行的场景</strong></p>
 <p>创建一个单线程话的线程池，他只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序执行</p>
 <p>newSingleThreadExecutor将corePoolSize和maximumPoolSize都设置为1，使用LinkedBlockingQueue</p>
 <p>源码：</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6czsaqpj30kh0940u5.jpg" alt="image-20210711181321383"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/3.jpg" alt="3"></p>
 </li>
 <li><p><code>Executors.newCachedThreadPool()</code></p>
 <p><strong>执行很多短期异步的小程序或负载较轻的服务器</strong></p>
 <p>创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲县城，若无可回收，则新建线程</p>
 <p>newCachedThreadPool将corePoolSize设置为0，将maximumPoolSize设置为Integer.MAX_VALUE,使用 的SynchronousQueue,也就是说来了任务就创建线程运行，当县城空闲超过60s，就销毁线程</p>
 <p>源码：</p>
-<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6dllescj30k909b7bq.jpg" alt="image-20210711181456304"></p>
+<p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/4.jpg" alt="4"></p>
 </li>
 </ul>
 <p>我们可以看到底层的代码都是由ThreadPoolExecutor这个类的构造方法创建的，只是传入的参数不同，那么研究一下这个类以及这些参数就很有必要，下节我们将介绍这些参数的使用</p>
@@ -527,7 +527,7 @@ import java.util.concurrent.">
 <li><p>==handler:== 拒绝策略，表示当队列满了并且工作线程大于等于线程池的最大线程数(maximumPoolSize)时如 何来拒绝请求执行的runable的策略</p>
 </li>
 </ol>
-<h3 id="5-线程池的底层工作原理以及过程"><a href="#5-线程池的底层工作原理以及过程" class="headerlink" title="5. 线程池的底层工作原理以及过程"></a>5. 线程池的底层工作原理以及过程</h3><p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gsd6kxrb4nj30t10djgmx.jpg" alt="image-20210711182159169"></p>
+<h3 id="5-线程池的底层工作原理以及过程"><a href="#5-线程池的底层工作原理以及过程" class="headerlink" title="5. 线程池的底层工作原理以及过程"></a>5. 线程池的底层工作原理以及过程</h3><p><img src="https://raw.githubusercontent.com/yuxue-r/pic/master/2025/09/5.jpg" alt="5"></p>
 <p>如上图所属，其流程为：</p>
 <ol>
 <li><p>在创建了线程池之后，等待提交过来的任务请求</p>
